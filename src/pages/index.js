@@ -3,22 +3,22 @@ import { graphql, Link } from "gatsby"
 import styled from 'styled-components'
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
 const BlogLink = styled(Link)`
   text-decoration: none;
 `
+
 const BlogTitle = styled.h3`
   margin-bottom: 20px;
-  color: blue;
+  color: #799351;
 `
 
 export default ({ data }) => (
   <Layout>
     <SEO title="Home" />
     <div>
-      <h1>Anja's Thoughts</h1>
+      <h1>My way to becoming a Fullstack Developer</h1>
       <h4>{ data.allMarkdownRemark.totalCount } Posts</h4>
       {data.allMarkdownRemark.edges.map(({node}) => (
         <div key={node.id}>

@@ -1,6 +1,21 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
+import styled from 'styled-components'
+
 import Layout from '../components/layout';
+
+const HomeLink = styled(Link)`
+  text-decoration: none;
+  color: #f6eec9;
+  background-color: #799351;
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: 2px 3px 4px #ffa36c;
+
+  ${Link}:hover {
+    box-shadow: 2px 3px 2px #a20a0a;
+  }
+`
 
 export default ({ data }) => {
     const post = data.markdownRemark;
@@ -10,6 +25,7 @@ export default ({ data }) => {
                 <h1>{post.frontmatter.title}</h1>
                 <div dangerouslySetInnerHTML={{ __html: post.html }} />
             </div>
+            <HomeLink to="/">Back to Homepage</HomeLink>
         </Layout>
     )
 }
