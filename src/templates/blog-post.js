@@ -4,6 +4,8 @@ import styled from 'styled-components'
 
 import Layout from '../components/layout';
 
+import './blog-post.css'
+
 const HomeLink = styled(Link)`
   text-decoration: none;
   color: #f6eec9;
@@ -11,8 +13,11 @@ const HomeLink = styled(Link)`
   padding: 10px 15px;
   border-radius: 10px;
   box-shadow: 2px 3px 4px #ffa36c;
+  transition: all 0.3s ease-in-out;
 
   ${Link}:hover {
+    color: #fffbe8;
+    background-color: #6f854e;
     box-shadow: 2px 3px 2px #a20a0a;
   }
 `
