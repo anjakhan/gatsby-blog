@@ -10,4 +10,4 @@ I successfully finished the [Complete React Developer in 2021 (w/ Redux, Hooks, 
 
 Check out the result:
 
-[<img src="https://anjakhan.netlify.app/assets/images/shop_crwn.jpg" alt="CRWN-Clothing" />](https://crwn-economy.herokuapp.com/)
+[<img src="https://anjakhan.netlify.app/static/media/shop_crwn.5d9867c8.jpg" alt="CRWN-Clothing" />](https://crwn-economy.herokuapp.com/)
